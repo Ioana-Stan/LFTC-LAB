@@ -50,6 +50,6 @@ Lexic:
   char:=letter|digit
  
 4.user-defined
-  udefined := "TYPE" identifier declstructure | declstructure{declstructure} "ENDTYPE"
-  declstructure := "DECLARE" identifier ":" type 
+  udefined := "TYPE" identifier declstructure "ENDTYPE"
+  declstructure := "DECLARE" identifier ":" type ;{declstructure}
   type := "INT" | "BOOLEAN" | "CHAR" | "INTEGER" | "REAL"
