@@ -1,0 +1,55 @@
+Alphabet:
+
+a. Upper (A-Z) and lower case letters (a-z) of the English alphabet
+
+       b. Underline character '_';
+
+       c. Decimal digits (0-9);
+
+Lexic:
+
+      a.Special symbols, representing:
+
+- operators + - * / := < <= = >=
+
+- separators [ ] { }  : ; space
+
+- reserved words:
+
+    const let if do else while then log read 
+    
+ 
+      b.Identifiers
+
+  -a sequence of letters and  digits, such that the first character is a lowercase letter; the rule is:
+
+    identifier ::= letter | letter{letter}{digit}
+
+    letter ::= "a" | "b" | . ..| "z"
+
+    digit ::= "0" | "1" |...| "9"
+
+
+      c.Constants
+1.integer - rule:
+
+  noconst:="+"no|"-"no|no
+
+  no:=digit{no}
+
+2.character
+
+  character:='letter'|'digit'
+
+3.string
+
+  constchar:="string"
+
+  string:=char{string}
+
+  char:=letter|digit
+ 
+4.user-defined
+  udefined := "TYPE" identifier declstructure | declstructure{declstructure} "ENDTYPE"
+  declstructure := "DECLARE" identifier ":" type 
+  type := "INT" | "BOOLEAN" | "CHAR" | "INTEGER" | "REAL"
