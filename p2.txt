@@ -1,0 +1,21 @@
+// verify if a number is prime
+
+VAR a: INTEGER;
+VAR i: INTEGER;
+VAR temp: INTEGER;
+
+
+START
+    READ(a);
+    temp := 1;
+    
+    FOR i = 2 TO sqrt(a)
+        IF a % i == 0 THEN
+            temp = 0;
+    
+    IF temp == 1 THEN
+        LOG('Given number is prime');
+    ELSE
+        LOG('Given number is NOT prime');
+STOP.
+            

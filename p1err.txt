@@ -1,0 +1,21 @@
+// lexical errors (identifiers cand only contain letters, operator >> not recognised )
+
+VAR A-d: INTEGER;
+VAR b: INTEGER;
+VAR c: INTEGER;
+
+START
+    A-d:=5;
+    b:=3;
+    c:=1;
+    
+    IF A-d >> b AND a > c THEN
+        LOG(a);
+    ELSE
+        IF b > A-d AND b > c THEN
+            LOG(b);
+        ELSE
+            IF c > A-d AND c > b THEN
+                LOG(c);
+STOP.
+            

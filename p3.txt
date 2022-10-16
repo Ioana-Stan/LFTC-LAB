@@ -1,0 +1,17 @@
+// sum of n numbers
+
+VAR n: INTEGER;
+VAR i: INTEGER;
+VAR a: INTEGER;
+VAR sum: DOUBLE;
+
+START
+    LOG('n= ');
+    READ(n);
+    sum = 0;
+    FOR i = 1 TO n 
+        READ(a);
+        sum += a;
+    LOG('The sum is: ', sum);
+        
+STOP.

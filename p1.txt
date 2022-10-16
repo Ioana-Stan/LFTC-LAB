@@ -1,0 +1,20 @@
+// compute the max of 3 numbers
+
+VAR a: INTEGER;
+VAR b: INTEGER;
+VAR c: INTEGER;
+
+START
+    a:=5;
+    b:=3;
+    c:=1;
+    
+    IF a > b AND a > c THEN
+        LOG(a);
+    ELSE
+        IF b > a AND b > c THEN
+            LOG(b);
+        ELSE
+            IF c > a AND c > b THEN
+                LOG(c);
+STOP.
