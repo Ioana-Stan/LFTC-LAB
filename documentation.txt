@@ -1,0 +1,25 @@
+Symbol Table using a Hash Table
+
+For my Symbol Table I chose to implement a Hash table for the elements stored in the table.
+
+def hash (element):
+- the hash function gets the element and creates its hashcode: the sum of each character in the ascii table modulo capacity.
+Arguments:
+    element: string/integer
+Returns:
+    the hash code corresponding to the provided element
+
+def add (element):
+-the add function adds the element to the table on its hashed position. If the element was already added, the position is returned.
+Arguments:
+    element: string/integer
+Returns:
+    the position, in the table, of the element that was found, if the element was already in the list
+    the position, in the table, the element was added on, otherwise
+
+def get (element):
+-the get function returns the position of the element in the hash table.
+Arguments:
+    element: string/integer
+Returns:
+    the position of the provided element inthe table
