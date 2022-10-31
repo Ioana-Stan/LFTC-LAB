@@ -1,3 +1,6 @@
+Github link:
+https://github.com/Ioana-Stan/LFTC-LABGithub link:
+
 Symbol Table using a Hash Table
 
 For my Symbol Table I chose to implement a Hash table for the elements stored in the table.
